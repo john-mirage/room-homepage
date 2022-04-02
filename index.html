@@ -16,9 +16,9 @@
         <!-- Header -->
         <header class="header">
             <!-- Mobile menu -->
-            <button class="mobile-menu">
-                <svg class="mobile-menu__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 14">
-                    <path class="mobile-menu__icon-path" fill="#FFF" fill-rule="evenodd" d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"/>
+            <button class="icon-button">
+                <svg class="icon-button__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 14">
+                    <path class="icon-button__icon-path" fill="#FFF" fill-rule="evenodd" d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"/>
                 </svg>
             </button>
             <a class="header__link" href="#" aria-label="room homepage link">
@@ -34,32 +34,32 @@
             <!-- Hero image -->
             <div class="hero__image">
                 <!-- Swiper / image -->
-                <div class="swiper ">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slider">
+                <div class="swiper slider slider--image">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slider slider__slide">
                             <img class="" src="/src/assets/images/mobile-image-hero-1.jpg" alt="hero mobile picture 1">
                             <img class="" src="/src/assets/images/desktop-image-hero-1.jpg" alt="hero mobile picture 1">
                         </div>
-                        <div class="swiper-slider">
+                        <div class="swiper-slider slider__slide">
                             <img class="" src="/src/assets/images/mobile-image-hero-2.jpg" alt="hero mobile picture 2">
                             <img class="" src="/src/assets/images/desktop-image-hero-1.jpg" alt="hero mobile picture 2">
                         </div>
-                        <div class="swiper-slider">
+                        <div class="swiper-slider slider__slide">
                             <img class="" src="/src/assets/images/mobile-image-hero-3.jpg" alt="hero mobile picture 3">
                             <img class="" src="/src/assets/images/desktop-image-hero-1.jpg" alt="hero mobile picture 3">
                         </div>
                     </div>
                 </div>
-                <!-- Swiper controller -->
-                <div class="swiper-controller">
-                    <div class="swiper-controller__button">
-                        <svg class="swiper-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
-                            <path class="swiper-controller__icon-path" d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+                <!-- Slider controller -->
+                <div class="slider-controller">
+                    <div class="slider-controller__button slider-controller__button--previous">
+                        <svg class="slider-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
+                            <path class="slider-controller__icon-path" d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                         </svg>
                     </div>
-                    <div class="swiper-controller__button">
-                        <svg class="swiper-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
-                            <path class="swiper-controller__icon-path" d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+                    <div class="slider-controller__button slider-controller__button--next">
+                        <svg class="slider-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
+                            <path class="slider-controller__icon-path" d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                         </svg>
                     </div>
                 </div>
@@ -68,46 +68,34 @@
             <!-- Hero text -->
             <div class="hero__text">
                 <!-- Swiper / text -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slider">
+                <div class="swiper slider slider--text">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__slide">
                             <div>
                                 <h1>Discover innovative ways to decorate</h1>
                                 <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
-                                <a href="">
-                                    <span>Shop now</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 12">
-                                        <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-                                    </svg>
-                                </a>
                             </div>
                         </div>
-                        <div class="swiper-slider">
+                        <div class="swiper-slide slider__slide">
                             <div>
                                 <h2>We are available all across the globe</h2>
                                 <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we're in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Dont't hesitate to contact us today.</p>
-                                <a href="">
-                                    <span>Shop now</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 12">
-                                        <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-                                    </svg>
-                                </a>
                             </div>
                         </div>
-                        <div class="swiper-slider">
+                        <div class="swiper-slide slider__slide">
                             <div>
                                 <h2>Manufactured with the best materials</h2>
                                 <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
-                                <a href="">
-                                    <span>Shop now</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 12">
-                                        <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-                                    </svg>
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="button" href="">
+                    <span class="button__label">Shop now</span>
+                    <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 12">
+                        <path class="button__icon-path" d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+                    </svg>
+                </a>
             </div>
         </div>
 
