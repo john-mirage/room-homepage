@@ -1,0 +1,11 @@
+.icon-button {
+    display: flex;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    &__icon {
+        width: 2rem;
+        height: auto;
+        margin: auto;
+    }
+}
