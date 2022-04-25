@@ -15,10 +15,15 @@ const textSwiper = new Swiper("#slider-text", {
     },
 });
 
-const imageSwiper = new Swiper("#slider-image", {
+new Swiper("#slider-image", {
     modules: [Navigation, Keyboard, Controller, A11y],
     resistanceRatio: 0,
     grabCursor: true,
+    navigation: {
+        nextEl: '#slider-image-next',
+        prevEl: '#slider-image-prev',
+        disabledClass: "-disabled",
+    },
     keyboard: {
         enabled: true,
         onlyInViewport: false,

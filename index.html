@@ -17,7 +17,7 @@
         <header class="header">
             <div class="header__section">
                 <!-- Mobile menu -->
-                <button class="icon-button">
+                <button class="icon-button header__button">
                     <svg class="icon-button__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 14">
                         <path class="icon-button__icon-path" fill="#FFF" fill-rule="evenodd" d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"/>
                     </svg>
@@ -39,7 +39,7 @@
             <!-- Hero image -->
             <div class="hero__image">
                 <!-- Swiper / image -->
-                <div class="swiper slider slider--image" id=" slider-image">
+                <div class="swiper slider slider--image" id="slider-image">
                     <div class="swiper-wrapper slider__wrapper">
                         <div class="swiper-slide slider__slide">
                             <img class="" src="/src/assets/images/mobile-image-hero-1.jpg" alt="hero mobile picture 1">
@@ -54,12 +54,12 @@
                 </div>
                 <!-- Slider controller -->
                 <div class="slider-controller">
-                    <div class="slider-controller__button slider-controller__button--previous">
+                    <div class="slider-controller__button slider-controller__button--previous" id="slider-image-prev">
                         <svg class="slider-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
                             <path class="slider-controller__icon-path" d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                         </svg>
                     </div>
-                    <div class="slider-controller__button slider-controller__button--next">
+                    <div class="slider-controller__button slider-controller__button--next" id="slider-image-next">
                         <svg class="slider-controller__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 24">
                             <path class="slider-controller__icon-path" d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                         </svg>
@@ -70,13 +70,27 @@
             <!-- Hero text -->
             <div class="hero__text">
                 <!-- Swiper / text -->
-                <div class="swiper slider slider--text" id=" slider-text">
+                <div class="swiper slider slider--text" id="slider-text">
                     <div class="swiper-wrapper slider__wrapper">
                         <div class="swiper-slide slider__slide">
-                            <div>
-                                <h1>Discover innovative ways to decorate</h1>
-                                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
-                            </div>
+                            <svg class="feature-text" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 375 410">
+                                <text class="feature-text__title" x="32" y="72">
+                                    <tspan x="32" dy="0">Discover innovative</tspan>
+                                    <tspan x="32" dy="32">ways to decorate</tspan>
+                                </text>
+                                <text class="feature-text__subtitle" x="32" y="148">
+                                    <tspan x="32" dy="0">We provide unmatched quality, comfort, and style</tspan>
+                                    <tspan x="32" dy="20">for property owners across the country. Our</tspan>
+                                    <tspan x="32" dy="20">experts combine form and function in bringing</tspan>
+                                    <tspan x="32" dy="20">your vision to life. Create a room in your own style</tspan>
+                                    <tspan x="32" dy="20">with our collection and make your property a</tspan>
+                                    <tspan x="32" dy="20">reflection of you and what you love.</tspan>
+                                </text>
+                                <a href="#">
+                                    <text class="feature-text__button" x="32" y="334">shop now</text>
+                                    <path d="M258.05 324L263.531 329.527H263.539V329.535L264 330L263.539 330.465V330.528L263.477 330.527L258.049 336L257.387 335.332L262.152 330.527H224V329.527H262.206L257.386 324.667L258.05 324Z" fill="black"/>
+                                </a>
+                            </svg>
                         </div>
                         <div class="swiper-slide slider__slide">
                             <div>
@@ -92,12 +106,6 @@
                         </div>
                     </div>
                 </div>
-                <a class="button" href="">
-                    <span class="button__label">Shop now</span>
-                    <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 12">
-                        <path class="button__icon-path" d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-                    </svg>
-                </a>
             </div>
         </div>
 
@@ -105,8 +113,19 @@
         <div class="about">
             <img class="about__image" src="/src/assets/images/image-about-dark.jpg" alt="Dark picture">
             <div class="about__text">
-              <h3 class="about__title">about our furniture</h3>
-              <p class="about__subtitle">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+                <svg class="about-text" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 375 304">
+                    <text class="about-text__title" x="32" y="60">about our furniture</text>
+                    <text class="about-text__subtitle" x="32" y="90">
+                        <tspan x="32" dy="0">Our multifunctional collection blends design and</tspan>
+                        <tspan x="32" dy="20">function to suit your individual taste. Make each</tspan>
+                        <tspan x="32" dy="20">room unique, or pick a cohesive theme that best</tspan>
+                        <tspan x="32" dy="20">express your interests and what inspires you. Find</tspan>
+                        <tspan x="32" dy="20">the furniture pieces you need, from traditional to</tspan>
+                        <tspan x="32" dy="20">contemporary styles or anything in between.</tspan>
+                        <tspan x="32" dy="20">Product specialists are available to help you</tspan>
+                        <tspan x="32" dy="20">create your dream space.</tspan>
+                    </text>
+                </svg>
             </div>
             <img class="about__image" src="/src/assets/images/image-about-light.jpg" alt="Light picture">
         </div>

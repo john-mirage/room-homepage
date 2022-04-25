@@ -9,9 +9,11 @@
     width: 100%;
     height: auto;
     padding-top: 3.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
 
     &__section {
-        flex: 1 1 0%;
+        flex: 1 1 0;
 
         &--middle {
             display: flex;
@@ -19,6 +21,10 @@
             justify-content: center;
             align-items: flex-start;
         }
+    }
+
+    &__button {
+        margin-left: -1.4rem;
     }
 
     &__logo {
